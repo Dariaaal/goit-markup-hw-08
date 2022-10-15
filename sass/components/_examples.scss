@@ -1,0 +1,99 @@
+.main{
+    padding-top: 94px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    gap: 8px;
+}
+
+.buttons button{
+    display: inline-block;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 6px 22px;
+    color: var(--primary-text-color);
+    background-color: var(--section-bg-color);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    cursor: pointer;
+    transition: background-color 250ms var(--time-function), color 250ms var(--time-function), box-shadow 250ms var(--time-function);
+
+    &:hover,&:focus{
+        background-color: var(--accent-color);
+        color: var(--letters-color);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+}
+
+.examples{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    &__border{
+        padding-top: 20px;
+        padding-right: 24px;
+        padding-left: 24px;
+        padding-bottom: 20px;
+        border-right: 1px solid var(--examples-border);
+        border-left:  1px solid var(--examples-border);
+        border-bottom:  1px solid var(--examples-border);
+    }
+
+    &__titles{
+        color: var(--primary-text-color);
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+        margin-bottom: 4px;
+    }
+
+    &__paragraphs{
+        color: var(--seconday-text-color);
+        font-size: 16px;
+        line-height: 1.87;
+    }
+}
+
+.examples__wrap{
+    position: relative;
+    overflow: hidden;
+
+    img{
+        display: block;
+    }
+}
+
+.examples__details{
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    color: var(--letters-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 63px 24px;
+    background-color: rgba(33, 150, 243, 0.9);
+    transform: translateY(101%);
+    transition: transform 250ms var(--time-function);
+
+    .examples__item:hover &,.examples__item:focus &{
+        transform: translateY(0);
+    }
+}
+
+.examples__link{
+    display: block;
+    transition: box-shadow 250ms var(--time-function);
+
+    &:hover,&:focus{
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+}
