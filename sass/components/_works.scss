@@ -35,3 +35,9 @@
         }
     }
 }
+
+.titles__work{
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+}
