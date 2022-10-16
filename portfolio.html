@@ -18,6 +18,44 @@
             <a href="./index.html" class="logo">
                 Web<span class="logo__part">Studio</span>
             </a>
+            <button type="button" class="menu__button js-open-menu" aria-expanded="false" aria-controls="menu__container">
+                <svg height="40" width="40" aria-label="Перемикач мобільного меню">
+                    <use class="menu__open" href="./images/sprite.svg#icon-menu"></use>
+                    </svg>
+            </button>
+            <div class="menu__container js-menu-container" id="menu__container">
+                <button type="button" class="close__button js-close-menu" aria-expanded="false" aria-controls="menu__container">
+                    <svg height="40" width="40" aria-label="Перемикач мобільного меню">
+                        <use class="menu__close"href="./images/sprite.svg#icon-close-black-18dp-2-1"></use>     
+                        </svg>
+                </button>
+                <ul class="menu">
+                    <li class="menu__item"><a href="./index.html" class="navigation-link">Студія</a></li>
+                    <li class="menu__item"><a href="./portfolio.html" class="navigation-link link current">Портфоліо</a></li>
+                    <li class="menu__item"><a href="#" class="menu-link">Контакти</a></li>
+                </ul>
+                <ul class="contact">
+                    <li>
+                        <a href="tel:+380961111111" class="contact__tel">
+                            +38 096 111 11 11</a></li>
+                    <li>
+                        <a href="mailto:info@devstudio.com" class="contact__mail">
+                            info@devstudio.com</a></li>
+                </ul>
+                <ul class="networks">
+                    <li>
+                       <a href="">Instagram</a>
+                    </li>
+                    <li>
+                        <a href="">Twitter</a></li>
+                    <li>
+                        <a href="">Facebook</a></li>
+                    </li>
+                    <li>
+                        <a href="">LinkedIn</a></li>
+                    </li>
+                </ul>
+            </div>
             <nav>
                 <ul class="navigation">
                     <li class="navigation__item"><a href="./index.html" class="navigation__link">Студія</a></li>
@@ -259,5 +297,12 @@
             </div>
         </div>
     </footer>
+    <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
+  ></script>
+  <script defer src="js/mobile-menu.js"></script>
 </body>
 </html>
