@@ -753,6 +753,59 @@ header {
   fill: var(--letters-color);
 }
 
+.companies {
+  padding-top: 94px;
+}
+
+.clients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+.clients__links {
+  width: 210px;
+  height: 92px;
+  border-radius: 4px;
+  border: 1px solid rgb(175, 177, 184);
+  background-color: var(--letters-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  fill: var(--clients-color);
+  -webkit-transition: fill 250ms var(--time-function), border-color 250ms var(--time-function);
+  transition: fill 250ms var(--time-function), border-color 250ms var(--time-function);
+}
+.clients__links:hover, .clients__links:focus {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+}
+@media screen and (min-width: 768px) {
+  .clients__links {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__links {
+    width: 170px;
+  }
+}
+
 .backdrop {
   position: fixed;
   top: 0;
