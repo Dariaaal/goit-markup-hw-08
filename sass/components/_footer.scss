@@ -141,7 +141,6 @@ address{
 
 .sign__wrap{
     margin-bottom: 20px;
-    width: 450px;
     height: 50px;
     border: 1px solid var(--border-form-color);
     outline: none;
@@ -159,6 +158,10 @@ address{
 
     &__wrap:focus{
         border: 1px solid var(--letters-color);
+    }
+
+    @media screen and (min-width:480px) {
+        width: 450px;
     }
 
     @media screen and (min-width:1200px) {
