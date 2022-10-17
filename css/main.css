@@ -826,11 +826,14 @@ header {
       flex-wrap: wrap;
   margin-bottom: 40px;
   gap: 8px;
-  margin-right: 131px;
+}
+@media screen and (max-width: 767px) {
+  .buttons {
+    max-width: 326px;
+  }
 }
 @media screen and (min-width: 768px) {
   .buttons {
-    margin-right: 0;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
