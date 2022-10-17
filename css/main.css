@@ -815,6 +815,37 @@ header {
 .footer__logo {
   color: var(--letters-color);
 }
+@media screen and (min-width: 768px) {
+  .footer {
+    text-align: center;
+  }
+  .footer__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer {
+    text-align: left;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer .footer__part {
+    margin-right: 70px;
+  }
+}
 
 .address__studio {
   color: var(--letters-color);
@@ -916,6 +947,13 @@ address {
 .sign__form input::placeholder {
   color: var(--footer-links-color);
 }
+@media screen and (min-width: 1200px) {
+  .sign__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 
 .sign {
   margin-top: 60px;
@@ -929,6 +967,12 @@ address {
   text-transform: uppercase;
   color: var(--letters-color);
   margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .sign {
+    margin-left: 93px;
+    margin-top: 0;
+  }
 }
 
 .sign__wrap {
@@ -957,6 +1001,11 @@ address {
 }
 .sign__wrap__wrap:focus {
   border: 1px solid var(--letters-color);
+}
+@media screen and (min-width: 1200px) {
+  .sign__wrap {
+    width: 358px;
+  }
 }
 
 .sign__button {
@@ -988,6 +1037,12 @@ address {
 }
 .sign__button:hover, .sign__button:focus {
   background-color: var(--hero-button-color);
+}
+@media screen and (min-width: 1200px) {
+  .sign__button {
+    margin-left: 12px;
+    height: 50px;
+  }
 }
 
 .backdrop {
