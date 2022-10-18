@@ -10,8 +10,6 @@ header{
     font-weight: 700;
     font-size: 24px;
     line-height: 1.16;
-    padding-top: 16px;
-    padding-bottom: 16px;
 
     &__part{
         color: var(--logo-color)
@@ -69,7 +67,7 @@ header{
     left: 0;
     width: 100%;
     height: 100vh;
-    transform: translateY(-101%);
+    transform: translateY(-200%);
     transition: transform 250ms var(--time-function);
 }
 
@@ -153,20 +151,7 @@ header{
     align-items: center;
 }
 
-.navigation{
-    display: flex;
-    margin-left: 93px;
-
-    &__item{
-        &:not(:last-child){
-            margin-right: 50px;
-        }
-    }
-    
-    @media screen and (max-width:767px){
-        display: none;
-    }
-
+nav{
     @media screen and (min-width:768px){
         margin-left: 88px;
     }
@@ -174,6 +159,25 @@ header{
     @media screen and (min-width:1200px){
         margin-left: 93px;
     }
+}
+
+.navigation{
+    display: flex;
+
+
+    &__item{
+        &:not(:last-child){
+            margin-right: 50px;
+        }
+    }
+
+    @media screen and (max-width:768px){
+        display: none;
+    }
+
+    @media screen and (min-width:768px){
+        display: flex;
+}
 }
 
 .navigation a{
@@ -211,11 +215,12 @@ header{
     margin-left: auto;
     display: flex;
 
-    @media screen and (max-width:767px){
+    @media screen and (max-width:768px){
         display: none;
     }
 
     @media screen and (min-width:768px){
+        display: flex;
         flex-direction: column;
 
         &__item + &__item{
@@ -254,5 +259,10 @@ header{
 
     &:hover,&:focus{
         color: var(--accent-color);
+    }
+
+    @media screen and (min-width:1200px){
+        padding-top: 32px;
+        padding-bottom: 32px;
     }
 }
