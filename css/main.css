@@ -1256,6 +1256,7 @@ address {
 }
 
 .modal {
+  width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1280,6 +1281,11 @@ address {
 @media screen and (min-width: 1200px) {
   .modal__name {
     line-height: 1.15;
+  }
+}
+@media screen and (max-width: 480px) {
+  .modal {
+    max-width: 450px;
   }
 }
 @media screen and (max-width: 767px) {
