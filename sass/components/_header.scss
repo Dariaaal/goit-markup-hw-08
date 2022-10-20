@@ -129,6 +129,7 @@ header{
 .networks{
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
 .networks a{

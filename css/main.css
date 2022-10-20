@@ -252,6 +252,8 @@ header {
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .networks a {
@@ -1256,7 +1258,6 @@ address {
 }
 
 .modal {
-  width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1283,18 +1284,12 @@ address {
     line-height: 1.15;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) {
   .modal {
-    max-width: 450px;
+    width: 90%;
   }
 }
-@media screen and (max-width: 767px) {
-  .modal {
-    width: 450px;
-    height: 609px;
-  }
-}
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 450px) {
   .modal {
     width: 450px;
     height: 609px;
@@ -1362,7 +1357,7 @@ address {
   height: 40px;
   border: 1px solid var(--input-border);
   border-radius: 4px;
-  width: 370px;
+  max-width: 370px;
   padding-left: 42px;
   padding-top: 11px;
   padding-bottom: 11px;
@@ -1371,6 +1366,11 @@ address {
 }
 .form__input:focus {
   border-color: var(--accent-color);
+}
+@media screen and (min-width: 480px) {
+  .form__input {
+    width: 370px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .form__input {
@@ -1388,7 +1388,7 @@ address {
 
 textarea {
   margin-top: 4px;
-  width: 370px;
+  max-width: 370px;
   height: 120px;
   resize: none;
   border: 1px solid var(--input-border);
@@ -1430,6 +1430,11 @@ textarea::placeholder {
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: var(--placeholder-color);
+}
+@media screen and (min-width: 480px) {
+  textarea {
+    width: 370px;
+  }
 }
 @media screen and (min-width: 1200px) {
   textarea {
