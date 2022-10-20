@@ -905,6 +905,17 @@ header {
   border-right: 1px solid var(--examples-border);
   border-left: 1px solid var(--examples-border);
   border-bottom: 1px solid var(--examples-border);
+  height: 110px;
+}
+@media screen and (min-width: 768px) {
+  .examples__border {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .examples__border {
+    width: 370px;
+  }
 }
 .examples__titles {
   color: var(--primary-text-color);
@@ -926,6 +937,17 @@ header {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     gap: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .examples__border.wrap {
+    height: 146px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .examples__border.wrap {
+    height: 110px;
   }
 }
 
