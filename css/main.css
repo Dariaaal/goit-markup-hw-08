@@ -1435,7 +1435,7 @@ address {
 .form__input:focus {
   border-color: var(--accent-color);
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 450px) {
   .form__input {
     width: 370px;
   }
@@ -1498,7 +1498,7 @@ textarea::placeholder {
   letter-spacing: 0.01em;
   color: var(--placeholder-color);
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 450px) {
   textarea {
     width: 370px;
   }
