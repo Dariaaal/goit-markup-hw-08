@@ -100,7 +100,6 @@
     height: 40px;
     border: 1px solid var(--input-border);
     border-radius: 4px;
-    max-width: 370px;
     padding-left: 42px;
     padding-top: 11px;
     padding-bottom: 11px;
@@ -108,10 +107,6 @@
 
     &:focus{
         border-color: var(--accent-color);
-    }
-
-    @media screen and (min-width:320px) {
-        
     }
 
     @media screen and (min-width:480px) {

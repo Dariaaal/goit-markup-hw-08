@@ -381,18 +381,46 @@ header {
 
 .contacts__icon {
   fill: currentColor;
-  margin-right: 10px;
+  margin-right: 8px;
   -webkit-transition: fill 250ms var(--time-function);
   transition: fill 250ms var(--time-function);
 }
 .contacts__icon:hover, .contacts__icon:focus {
   fill: var(--accent-color);
 }
+@media screen and (min-width: 1200px) {
+  .contacts__icon {
+    margin-right: 10px;
+  }
+}
+
+.contacts__icon--letter {
+  width: 14px;
+  height: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .contacts__icon--letter {
+    width: 16px;
+    height: 12px;
+  }
+}
+
+.contacts__icon--phone {
+  width: 10px;
+  height: 14px;
+}
+@media screen and (min-width: 1200px) {
+  .contacts__icon--phone {
+    width: 10px;
+    height: 16px;
+  }
+}
 
 .contacts__link {
   color: var(--seconday-text-color);
   font-weight: 500;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -410,6 +438,9 @@ header {
   .contacts__link {
     padding-top: 32px;
     padding-bottom: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 
@@ -1386,7 +1417,6 @@ address {
   height: 40px;
   border: 1px solid var(--input-border);
   border-radius: 4px;
-  max-width: 370px;
   padding-left: 42px;
   padding-top: 11px;
   padding-bottom: 11px;
